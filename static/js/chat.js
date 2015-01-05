@@ -5,7 +5,7 @@
     var WebSocket = window.WebSocket || window.MozWebSocket;
     if (WebSocket) {
         try {
-            url = 'ws://' + window.location.hostname + ':' + window.location.port + '/test/chat'
+            url = 'ws://' + window.location.hostname + ':' + window.location.port + '/chat'
             /*'ws://localhost:8080/test/chat'*/
             var socket = new WebSocket(url);
         } catch (e) {}

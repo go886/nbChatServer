@@ -14,8 +14,8 @@ except Exception, e:
 	print e
 
 
-# from apps.handler import *
-# from apps.manager import *
+from apps.handler import *
+#from apps.manager import *
 from config import theConfig
 
 
@@ -29,8 +29,8 @@ settings = dict(
 )
 
 urls = [
-	# (r'/test', Test),
-	# (r'/test/chat', TestChat),
+	 (r'/', Test),
+	 (r'/chat', BaseWebSocket),
 ]
 
 if __name__ == '__main__':
