@@ -16,7 +16,7 @@ config = {
 	'data_dir': 'data',
 	'upload_dir': 'static/images/',
 	'db_type': 'mysql',
-	'db_name': 'go886',
+	'db_name': 'nbchatserver',
 	'db_host': 'localhost',
 	'db_port': 3306,
 	'db_timeout': 60*60*7,

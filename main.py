@@ -14,8 +14,8 @@ except Exception, e:
 	print e
 
 
-from apps.handler import *
-#from apps.manager import *
+import apps.handler
+import apps.manager
 from config import theConfig
 
 
@@ -29,9 +29,13 @@ settings = dict(
 )
 
 urls = [
-	 (r'/', Test),
-	 (r'/chat', BaseWebSocket),
+	 (r'/', apps.handler.Test),
+	 (r'/chat', apps.handler.BaseWebSocket),
+
+	 (r'/admin/login', apps.manager.Login),
+	 #(r'/admin/index', )
 ]
+
 
 if __name__ == '__main__':
 	tornado.options.parse_command_line()
